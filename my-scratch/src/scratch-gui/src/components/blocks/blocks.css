@@ -1,0 +1,29 @@
+@import "../../css/units.css";
+@import "../../css/colors.css";
+
+$border-style: 1px solid $ui-pane-border;
+
+.blocks :global(.injectionDiv){
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: $border-style;
+    border-top-right-radius: $space;
+}
+
+.blocks :global(.blocklyMainBackground) {
+    stroke: none;
+}
+
+.blocks :global(.blocklyToolboxDiv) {
+    border-right: $border-style;
+    border-bottom: $border-style;
+    box-sizing: content-box;
+}
+
+.blocks :global(.blocklyFlyout) {
+    border-right: $border-style;
+    box-sizing: content-box;
+}

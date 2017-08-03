@@ -1,0 +1,18 @@
+# Mac OS
+.DS_Store
+
+# NPM
+/my-scratch/node_modules
+npm-*
+
+# Testing
+/my-scratch/.nyc_output
+/my-scratch/coverage
+
+# Build
+/my-scratch/build
+/my-scratch/.opt-in
+
+# generated translation files
+/my-scratch/translations
+/my-scratch/locale

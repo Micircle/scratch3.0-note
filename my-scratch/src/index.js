@@ -1,0 +1,1 @@
+import './scratch-extend/gui/src/index.jsx';

@@ -1,0 +1,13 @@
+.stop-all {
+    width: 1.1rem;
+    height: 1.1rem;
+    opacity: 0.5;
+    user-select: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out; /* @todo: standardize with var */ 
+}
+
+.stop-all.is-active,
+.stop-all:hover {
+    opacity: 1;
+}

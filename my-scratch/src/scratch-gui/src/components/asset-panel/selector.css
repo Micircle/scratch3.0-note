@@ -1,0 +1,53 @@
+@import "../../css/colors.css";
+
+.wrapper {
+    width: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $ui-background-blue;
+}
+
+.new-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.25rem 0;
+    color: $motion-primary;
+}
+
+.new-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.new-button:hover {
+    transform: scale(1.2);
+}
+
+.new-button + .new-button {
+    margin-top: 1.25rem;
+}
+
+.new-button-icon + .new-button-label {
+    margin-top: 0.5rem;
+}
+
+.list-area {
+    /* Must have some height (recalculated by flex-grow) in order to scroll */
+    height: 0;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.list-item {
+    width: 5rem;
+    min-height: 5rem;
+    margin: 1rem auto;
+}
