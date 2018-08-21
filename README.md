@@ -41,14 +41,13 @@
 
 
 ## [scratch-blocks](https://github.com/LLK/scratch-blocks)
-----
 
 Scratch Blocks是基于谷歌[Blockly](https://github.com/google/blockly)开发的一个图形化js库，用积木块的形式来实现编程。
 
 这里Scratch Blocks抛弃了Blockly中积木块转Python等编程语言的功能（Blockly中Generator的部分），通过抛事件的方式搭配Scratch VM来实现控制舞台渲染。
 
 ## [scratch-vm](https://github.com/LLK/scratch-vm)
-----
+
 Scratch VM 是一个运行Scratch Blocks代码块的引擎库。主要由以下功能：
 
 + 加载解析项目：通过Scratch GUI导入一个.sb2、.sb3的项目文件，解析项目文件，加载项目中用到的图片和声音，将项目角色渲染到舞台上，将项目中用到的积木块渲染到代码工作区。
@@ -62,7 +61,7 @@ Scratch VM 是一个运行Scratch Blocks代码块的引擎库。主要由以下�
 + 调用Scratch Render提供的舞台渲染接口，更新舞台
 
 ## [scratch-render](https://github.com/LLK/scratch-render)
-----
+
 Scratch Render 是基于webgl的一个渲染引擎，主要用到了twgl库来操作webgl，定义了供Scratch VM调用的舞台渲染接口。
 主要功能：
     + 根据svg、png的数据在canvas中渲染成图形
@@ -70,7 +69,7 @@ Scratch Render 是基于webgl的一个渲染引擎，主要用到了twgl库来�
     + 画笔图层
 
 ## [scratch-audio](https://github.com/LLK/scratch-audio)
-----
+
 Scratch Audio 是用来解析声音、播放声音的库。
 
 ## 其他仓库
