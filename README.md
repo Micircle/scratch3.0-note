@@ -43,9 +43,9 @@
 ## [scratch-blocks](https://github.com/LLK/scratch-blocks)
 ----
 
-Scratch Blocks是基于谷歌[Blockly](https://github.com/google/blockly)开发的一个图形化js库，用积木块的形式来实现编程。
+Scratch Blocks是基于谷歌[Blockly](https://github.com/google/blockly)开发的一个图形化js库，用积木块的形式来实现编程。
 
-这里Scratch Blocks抛弃了Blockly中积木块转Python等编程语言的功能（Blockly中Generator的部分），通过抛事件的方式搭配Scratch VM来实现控制舞台渲染。
+这里Scratch Blocks抛弃了Blockly中积木块转Python等编程语言的功能（Blockly中Generator的部分），通过抛事件的方式搭配Scratch VM来实现控制舞台渲染。
 
 ## [scratch-vm](https://github.com/LLK/scratch-vm)
 ----
