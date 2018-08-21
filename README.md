@@ -7,7 +7,6 @@
 ## scratch3.0 几个核心库介绍
 
 ## [scratch-gui](https://github.com/LLK/scratch-gui)
-----
 
 由React组件组成的UI界面
 <img src='./scratch3.0.png'/>
