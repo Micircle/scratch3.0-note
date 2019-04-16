@@ -40,6 +40,6 @@ xml 字符串渲染成积木
 
 我们从这里就可以看到 block 和 XML 文档中的 block 标签是有意义对应关系的，事实也是 Toolbox 中的所有分类 Category 和积木 Block 对应了一个完整的 XML 树，这个 XML 可以在 [Scratch Gui](https://github.com/LLK/scratch-gui/blob/develop/src/lib/make-toolbox-xml.js) 项目的 `src/lib/make-toolbox-xml.js` 中找到，如果你对这个 js 里 category、block 标签的结构有些其奇怪，或者在想是不是可以随便定义一个 category、block 就可以在浏览器上显示出来，那么可以后边的章节，看看 Block 是有什么构成的，怎么自己定义一个 Block 和 Category。
 
-Scratch Blocks 中还有很多重要的属性和方法，后边的内容也会涉及到一部分，如果你遇到了一些问题或者有任何建议都可以在 Issues 中留言，我会最快的响应。
+Scratch Blocks 中还有很多重要的属性和方法，后边的内容也会涉及到一部分，<strong style="color: #1EAAFF">如果你遇到了一些问题或者有任何建议都可以在 Issues 中留言，我会最快的响应</strong>。
 
 *喜欢的话请点击一下右上角的 Star 吧，谢谢~*
