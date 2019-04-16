@@ -1,6 +1,6 @@
 # scratch 3.0 开发笔记
 
-欢迎体验我们基于 scratch3.0 开发的 IDE 工具[慧编程(mBlock5)](https://ide.makeblock.com/#/)，也可以下载 [PC或移动APP](http://www.mblock.cc/zh-home/software/?noredirect=zh-CN)，不仅完全支持 scratch3.0 的舞台角色功能，还可以使用它来控制硬件机器人，使用 Python 编程，以及体验 AI，机器学习等扩展。
+欢迎体验我们基于 scratch3.0 开发的 IDE 工具[慧编程（mBlock5）](https://ide.makeblock.com/#/)，也可以下载 [PC或移动APP](http://www.mblock.cc/zh-home/software/?noredirect=zh-CN)，不仅完全支持 scratch3.0 的舞台角色功能，还可以使用它来控制硬件机器人，使用 Python 编程，以及体验 AI，机器学习等扩展。
 
 可以看一下我对 scratch3.0 的大概介绍，也可以跟着我[一步步了解 scratch3.0 的相关技术](https://github.com/Micircle/scratch3.0-note/wiki)
 
@@ -45,13 +45,13 @@
 
 
 
-## [scratch-blocks](https://github.com/LLK/scratch-blocks)
+### [scratch-blocks](https://github.com/LLK/scratch-blocks)
 
 Scratch Blocks 是基于谷歌 [Blockly](https://github.com/google/blockly) 开发的一个图形化 js 库，用积木块的形式来实现编程。
 
 这里 Scratch Blocks 抛弃了 Blockly 中积木块转 Python 等编程语言的功能（Blockly中Generator 的部分），通过抛事件的方式搭配 Scratch VM 来实现控制舞台渲染。
 
-## [scratch-vm](https://github.com/LLK/scratch-vm)
+### [scratch-vm](https://github.com/LLK/scratch-vm)
 
 Scratch VM 是一个运行 Scratch Blocks 代码块的引擎库。主要有以下功能：
 
@@ -65,7 +65,7 @@ Scratch VM 是一个运行 Scratch Blocks 代码块的引擎库。主要有以�
 + 扩展管理：扩展被添加时，解析扩展数据，更新 Scratch Blocks 的 toolbox ，添加新的分类和积木
 + 调用 Scratch Render 提供的渲染接口，更新舞台
 
-## [scratch-render](https://github.com/LLK/scratch-render)
+### [scratch-render](https://github.com/LLK/scratch-render)
 
 Scratch Render 是基于 webgl 的一个渲染引擎，主要用到了 twgl 库，定义了供 Scratch VM 调用的接口。
 主要功能：
@@ -73,17 +73,18 @@ Scratch Render 是基于 webgl 的一个渲染引擎，主要用到了 twgl 库�
     + 更新角色图层的信息：大小、位置、角度、图层优先级、图形特效等
     + 画笔图层
 
-## [scratch-audio](https://github.com/LLK/scratch-audio)
+### [scratch-audio](https://github.com/LLK/scratch-audio)
 
 Scratch Audio 是用来解析声音、播放声音的库。
 
-## 其他仓库
+### 其他仓库
 [scratch-paint](https://github.com/LLK/scratch-paint)：GUI 中造型编辑的组件，用到了 paper.js，目前处理带有 text 标签的 svg 文件时会有 bug，在 windows 环境中容易崩溃。
 
 [scratch-svg-render](https://github.com/LLK/scratch-svg-render)：scratch 处理 svg 资源的一个工具库，处理带有 text 标签的 svg 文件时会有 bug。
 
 [scratch-i10n](https://github.com/LLK/scratch-i10n)：scratch 多语言库，包含了Scratch GUI 和 Scratch Blocks 中用到的翻译信息。
 
+----
 欢迎在 Issues 提出任何问题和建议，一起探讨学习，
 [点击去查看更详细的介绍](https://github.com/Micircle/scratch3.0-note/wiki)。
 
