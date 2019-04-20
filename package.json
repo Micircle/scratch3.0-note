@@ -1,0 +1,26 @@
+{
+  "name": "scratch3.0-note",
+  "version": "1.0.0",
+  "description": "scratch3.0 note",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Micircle/scratch3.0-note.git"
+  },
+  "keywords": [
+    "scratch",
+    "blockly"
+  ],
+  "author": "KaneShao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Micircle/scratch3.0-note/issues"
+  },
+  "homepage": "https://github.com/Micircle/scratch3.0-note#readme",
+  "dependencies": {
+    "scratch-blocks": "^0.1.0-prerelease.1555512815"
+  }
+}
