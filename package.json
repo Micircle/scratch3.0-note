@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Micircle/scratch3.0-note#readme",
   "dependencies": {
-    "scratch-blocks": "^0.1.0-prerelease.1555512815"
+    "scratch-blocks": "^0.1.0-prerelease.1556115881",
+    "scratch-vm": "^0.2.0-prerelease.20190424211319"
   }
 }

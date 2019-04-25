@@ -4,6 +4,9 @@
 
 可以看一下我对 scratch3.0 的大概介绍，也可以跟着我[一步步了解 scratch3.0 的相关技术](https://github.com/Micircle/scratch3.0-note/wiki)
 
+- [Scratch Gui](./scratch-gui/index.md)
+- [Scratch Blocks](./scratch-blocks/index.md)
+
 ### scratch3.0 几个核心库介绍
 
 ### [scratch-gui](https://github.com/LLK/scratch-gui)

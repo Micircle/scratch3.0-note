@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scratch Blocks - define a field</title>
+    <style>
+        body {
+            
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .wrapper {
+            position: fixed;
+            overflow: hidden;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .container {
+            height: 100%;
+            flex: 1;
+            border-left: 2px solid #f0f0f0;
+        }
+
+        .code {
+            box-sizing: border-box;
+            padding: 0 12px 12px;
+            width: 700px;
+            overflow-y: auto; 
+            height: 100%;
+        }
+
+        pre {
+            font-size: 13px;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="code">
+            <h3>积木 JSON 定义</h3>
+            <pre>
+    Blockly.Blocks['move_and_say'] = {
+        init: function() {
+            this.jsonInit({
+                message0: '移动 %1 步后说 %2',
+                args0: [
+                    {
+                        type: 'input_value',
+                        name: 'STEPS'
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: "MENU",
+                        options: [
+                            ['你好！', 'hello'],
+                            ['再见！', 'bye']
+                        ]
+                    }
+                ],
+                colour: '#4C97FF',
+                colourSecondary: '#3373CC',
+                category: 'motion',
+                extensions: ['shape_statement']
+            })
+        }
+    };
+            </pre>
+            <h3>积木 XML 代码</h3>
+            <pre>
+    &lt;xml>
+        &lt;category name="动作" id="action" colour="#4C97FF" secondaryColour="#3373CC">
+            &lt;block type="move_and_say">
+                &lt;value name="STEPS">
+                    &lt;shadow type="math_number">
+                        &lt;field name="NUM">10&lt;/field>
+                    &lt;/shadow>
+                &lt;/value>
+                &lt;field name="MENU">bye&lt;/field>
+            &lt;/block>
+        &lt;/category>
+    &lt;/xml>
+            </pre>
+            <div>
+                为方便示例展示，直接使用了打包好的 scratch-blocks 的脚本，脚本来自
+                <a href="https://github.com/LLK/scratch-blocks.git">https://github.com/LLK/scratch-blocks.git</a>
+                可以通过如下操作打包所需的脚本 dist/web/vertical.js
+                <pre>
+    > git clone https://github.com/LLK/scratch-blocks.git
+    > cd scratch-blocks
+    > npm i
+    > npm run prepublish
+                </pre>
+            </div>
+            <div>
+                你也可以通过 npm 依赖的方式在项目中使用
+            </div>
+        </div>
+        <div class="container"></div>
+    </div>
+    <script src="../scripts/scratch-blocks.js"></script>
+    <script>
+        // 定义一个积木
+        Blockly.Blocks['move_and_say'] = {
+            init: function() {
+                this.jsonInit({
+                    message0: '移动 %1 步后说 %2',
+                    args0: [
+                        {
+                            type: 'input_value',
+                            name: 'STEPS'
+                        },
+                        {
+                            type: 'field_dropdown',
+                            name: "MENU",
+                            options: [
+                                ['你好！', 'hello'],
+                                ['再见！', 'bye']
+                            ]
+                        }
+                    ],
+                    colour: '#4C97FF',
+                    colourSecondary: '#3373CC',
+                    category: 'motion',
+                    extensions: ['shape_statement']
+                })
+            }
+        };
+
+        const Xml = `
+            <xml>
+                <category name="动作" id="action" colour="#4C97FF" secondaryColour="#3373CC">
+                    <block type="move_and_say">
+                        <value name="STEPS">
+                            <shadow type="math_number">
+                                <field name="NUM">10</field>
+                            </shadow>
+                        </value>
+                        <field name="MENU">bye</field>
+                    </block>
+                </category>
+            </xml>
+        `;
+            
+        // 初始化 Scratch Blocks，没有设置 toolbox 属性时会加载默认的 toolbox
+        const conatiner = document.querySelector('.container');
+        const workspace = Blockly.inject(conatiner, {
+          media: '../media/',
+          toolbox: Xml,
+          zoom: {
+            controls: true,
+            wheel: true,
+            startScale: 0.75,
+            maxScale: 4,
+            minScale: 0.25,
+            scaleSpeed: 1.1
+          },
+          colours: {
+            fieldShadow: 'rgba(255, 255, 255, 0.3)',
+            dragShadowOpacity: 0.6
+          }
+        });
+        
+    </script>
+</body>
+</html>
