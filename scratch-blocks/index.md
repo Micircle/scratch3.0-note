@@ -3,4 +3,5 @@
 
 下面是我对 Scratch Blocks 的一些理解和使用。
 
-- [简单介绍 scratch blocks 的关键对象](./objects.md)
+- [scratch blocks 的关键对象](./objects.md)
+- [scratch blocks 积木配置](./block.md)

@@ -2,8 +2,9 @@
 
 欢迎体验我们基于 scratch3.0 开发的 IDE 工具[慧编程（mBlock5）](https://ide.makeblock.com/#/)，也可以下载 [PC或移动APP](http://www.mblock.cc/zh-home/software/?noredirect=zh-CN)，不仅完全支持 scratch3.0 的舞台角色功能，还可以使用它来控制硬件机器人，使用 Python 编程，以及体验 AI，机器学习等扩展。
 
-可以看一下我对 scratch3.0 的大概介绍，也可以跟着我[一步步了解 scratch3.0 的相关技术](https://github.com/Micircle/scratch3.0-note/wiki)
+可以看一下我对 scratch3.0 的大概介绍，也可以跟着我一步步了解 scratch3.0 的相关技术
 
+**笔记目录**
 - [Scratch Gui](./scratch-gui/index.md)
 - [Scratch Blocks](./scratch-blocks/index.md)
 
