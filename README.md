@@ -4,7 +4,7 @@
 
 可以看一下我对 scratch3.0 的大概介绍，也可以跟着我一步步了解 scratch3.0 的相关技术
 
-**笔记目录**
+**[笔记目录](https://micircle.github.io/scratch3.0-note/)**
 - [Scratch Gui](./scratch-gui/index.md)
 - [Scratch Blocks](./scratch-blocks/index.md)
 
