@@ -139,12 +139,6 @@ ScratchBlocks.Blocks['control_if_else'] = {
     - input_value：可被相同形状的积木覆盖的参数，根据 ```"check": "Boolean", "String", "Number" ``` 的不同，形状不同
     - input_statement：可以连接命令类型积木
 
-
-也可以自己定义 field，例如一个表情面板，点击后可以编辑：
-
-<img src="./blocks/face-panel-block.png"/>
-<img src="./blocks/face-panel-modal.png"/>
-
 更为详细的可以查看官方的文档 [Define Blocks](https://google-developers.appspot.com/blockly/guides/create-custom-blocks/define-blocks)。
 
 ### 示例
