@@ -49,5 +49,6 @@ Scratch Gui 是一个可以创建和运行 Scratch 3.0 项目的单页面应用�
 - **index.js:** 作为 library 打包的入口文件
 
 ### Scratch Gui 加载项目的流程
+简要概括就是：通过 Scratch Gui 打开项目文件，Scratch VM 解析项目角色数据，其中声音文件和造型图片文件分别通过 Scratch Audio 和 Scratch Render 解析加载后等待被使用，解析用到的 blocks 和 扩展，最后生成项目的角色列表，更新 Scratch Gui，渲染舞台
 <img src="./flow.png" />
 上图只是简单描述下项目加载的流程，实际上每个库的作用都更为复杂。
