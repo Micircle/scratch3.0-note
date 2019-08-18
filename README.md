@@ -77,7 +77,7 @@ Scratch Audio 是用来解析声音、播放声音的库。
 
 Scratch Link 通过 WebSocket 使 Scratch 硬件扩展可以和硬件设备通讯。
 
-想知道怎么用 nodejs 实现，可以查看 https://github.com/Micircle/scratch3.0-note。
+想知道怎么用 nodejs 实现，可以查看 https://github.com/Micircle/scratch-node-link。
 
 ### 其他仓库
 [scratch-paint](https://github.com/LLK/scratch-paint)：GUI 中造型编辑的组件，用到了 paper.js，目前处理带有 text 标签的 svg 文件时会有 bug，在 windows 环境中容易崩溃。
@@ -89,6 +89,6 @@ Scratch Link 通过 WebSocket 使 Scratch 硬件扩展可以和硬件设备通�
 ### 笔记目录
 - [Scratch Gui](./scratch-gui/index.md)
 - [Scratch Blocks](./scratch-blocks/index.md)
-- [Scratch Link with nodejs] (https://github.com/Micircle/scratch3.0-note)
+- [Scratch Link with nodejs](https://github.com/Micircle/scratch-node-link)
 
 *喜欢的话请点击一下右上角的 Star 吧，谢谢~*
