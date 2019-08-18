@@ -89,6 +89,6 @@ Scratch Link 通过 WebSocket 使 Scratch 硬件扩展可以和硬件设备通�
 ### 笔记目录
 - [Scratch Gui](./scratch-gui/index.md)
 - [Scratch Blocks](./scratch-blocks/index.md)
-- [Scratch Link with nodejs](https://github.com/Micircle/scratch-node-link)
+- [以 microbit 扩展为例，了解 Scratch 硬件通讯流程](https://github.com/Micircle/scratch-node-link)
 
 *喜欢的话请点击一下右上角的 Star 吧，谢谢~*
